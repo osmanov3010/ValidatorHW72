@@ -12,7 +12,7 @@ public class Validator {
     }
     public static boolean checkPhoneNumber(String str) {
         //+99(01)1234-5678
-        return str.matches("[+]99\\(01\\)[0-9]{4}-[0-9]{4}");
+        return str.matches("[+]99\\([0-9]{2}\\)[0-9]{4}-[0-9]{4}");
     }
     public static boolean checkLessEquals255(String str) {
         return str.matches("([0-9])|([1-9][0-9])|(1[0-9][0-9])|(2[0-5][0-5])");
